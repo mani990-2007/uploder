@@ -1,0 +1,384 @@
+/* General styling */
+
+/* فایل style.css */
+
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.login-container, .register-container, .dashboard-container, .account-container, .upload-container {
+    background-color: #fff3e0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover, .register-container:hover, .dashboard-container:hover, .account-container:hover, .upload-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+h2 {
+    color: #158dd8;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"], input[type="file"], button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #80ddff;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus {
+    border-color: #0080ff;
+    outline: none;
+}
+
+button {
+    background-color: #45b9ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00a6ff;
+}
+
+/* File input styling */
+.file-input-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.file-input-wrapper input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.file-input-wrapper label {
+    display: block;
+    background-color: #b2dfff;
+    color: #0066ff;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-input-wrapper label:hover {
+    background-color: #26beff;
+}
+
+/* Validation error styling */
+.error {
+    color: #e53935;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Link and paragraph styling */
+.signup-link, .login-link, p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.signup-link a, .login-link a {
+    color: #34b1ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    color: #0083ff;
+}
+
+.file-table-container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1587d8;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #80b7ff;
+}
+
+th {
+    background-color: #43ddff;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b2e1ff;
+}
+
+tbody tr:hover {
+    background-color: #80d9ff;
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #ffa726;
+}
+
+.delete-btn {
+    background-color: #e53935;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #ff5722;
+}
+
+.log-out {
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #ff5452;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s;
+}
+
+.log-out:hover {
+    background-color: #ff2b2b;
+}
+
+.about {
+    display: block;
+    width: 370px;
+    margin: 1px auto;
+    text-align: center;
+    padding: 17px;
+    background-color: #9dd0ff;
+    color: #595959;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about:hover {
+    background-color: #26a5ff;
+    color: #fff;
+}
+/* General styling */
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.file-table-container {
+    max-width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+h2 {
+    color: #15b4d8;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgba(200, 200, 200, 0.57);
+    font-size: 16px;
+}
+
+th {
+    background-color: #00bdfd;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+tbody tr:hover {
+    background-color: #bab6b6;
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: #e53935;
+}
+
+.share-btn {
+    background-color: #5bb7ff;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #43b7ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #229cff;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .action-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
